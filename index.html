@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+<!-- / / / /Put the title of your site below between the title tags / / / /-->
+        <title>Your title here</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" href="animations.css"/>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
+        
+    </head>
+<body>
+
+
+<!--Start of the header page-->
+    <div class="pageHeader" id="home">
+        <div class="nav slideDown">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallary">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+<!-- / / / / / Put your name below / / / / / -->
+            <h1 class="welcomeTitle slideRight">Dylan Dotolo</h1>
+            <h2 class="scrollDown slideUp">Scroll Down</h2>
+    </div>
+    
+    <div class="about">
+        <div class="profileImageContainer">
+        
+<!--/ / / / Put your profile image in the images folder. Then change the 'src' below to point at you image / / / /  -->
+           <img id="profileImage" src="images/aboutImage.jpg"/> 
+        </div>
+        
+ <!--/ / / / Right the about me section below / / / / /  --> 
+               
+         <div class="aboutDescription fadeIn">
+             Lorem ipsum dolor sit amet, id dicta munere nostrum mel. Cu sumo aeque tincidunt sea. At has partem integre reprimique. Sea ad ipsum malorum omittam, mel nibh quaeque signiferumque in, quodsi aliquip nam cu. Sed cetero sanctus no, vel ut dico liberavisse, soleat adversarium eum ei. Lorem ipsum dolor sit amet, id dicta munere nostrum mel. Cu sumo aeque tincidunt sea. At has partem integre reprimique. Sea ad ipsum malorum omittam, mel nibh quaeque signiferumque in, quodsi aliquip nam cu. Sed cetero sanctus no, vel ut dico liberavisse, soleat adversarium eum ei.
+         </div>
+    </div>
+    
+    <div class="line"></div>
+    
+<!--/ / / / Start of Gallary page / / / /  -->
+
+    <div class="gallaryWrapper">
+        <h1 id="gallary">Gallery</h1>     
+    </div>
+    
+    <div class="line"></div>
+    
+<!--Start of all the gallary images contained in a flexbox -->
+    <!-- //// Add images to the image folder, then add the new image to the 'src' The images display in order
+            if you need to add more images copy the image class and replace the 'src' with the new image //////-->
+    <div class="gallaryContainer">
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage1.jpg"/></a>
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage2.jpg"/></a>
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage3.jpg"/></a>
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage4.jpg"/></a>
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage5.jpg"/></a>
+        <a class="imageHover" href="#"><img class="gallaryImage1" src="images/gallaryImage6.jpg"/></a>      
+    </div>
+    
+<script>
+	$(window).scroll(function() {    
+
+
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $("#profileImage").addClass("slideUp");
+    }
+});
+</script>     
+</body>
+</html>
